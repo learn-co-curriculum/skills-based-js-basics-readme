@@ -159,7 +159,7 @@ JavaScript that most browsers work in) using a tool like [Babel](https://babeljs
 [TypeScript](https://www.typescriptlang.org/) is also growing in popularity.
 
 All of this is to say that the long-running semicolon debate in JavaScript
-is largely overblown at this point. Remember to use semicolons when to separate
+is largely overblown at this point. Remember to use semicolons to separate
 statements that occur on a single line; otherwise, follow the conventions of
 the team.
 
