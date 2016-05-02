@@ -1,27 +1,23 @@
 # Intro to JavaScript
 
 JavaScript is the de facto language of the internet. It's a tool that, once
-mastered, will allow you to interact with your users via your app in fun and
-interesting ways. It is a dynamically typed, prototypical, functional
-programming language. What that exactly means will become more apparent in
-lessons and through exposure to the language. But here are the basics.
+mastered, will allow you to interact with users via apps in fun and
+interesting ways.
+
+In technobabble, JavaScript is a dynamic, untyped, and interpreted programming
+language; it is prototype-based and supports both object-oriented and functional
+approaches. What all this means will become more apparent in lessons and through
+exposure to the language. But here are the basics.
 
 ## Objectives
 + Print JavaScript to the console
 + Explain proper use of semicolons and other syntax basics
-+ Explain truthy and falsely values
++ Explain truthy and falsey values
 
 
 ## Syntax Basics
 
 #### Variable Declaration
-
-To make a variable called `greeting` and set it equal to the string `
-"hello world"` in Ruby, we could just write:
-
-```ruby
-greeting = "hello world"
-```
 
 In JavaScript, to declare a local variable (which is almost always what you want
 to do), you add the keyword `var` before the variable name, like so:
@@ -29,53 +25,89 @@ to do), you add the keyword `var` before the variable name, like so:
 ```javascript
 var greeting = "hello world";
 ```
-Notice that semicolons are used after variable declaration and after printing
-information to the console.
+
+Well, this code is all fine and dandy but how do you run it? The best, possibly
+most powerful thing about JavaScript is that all modern browsers know how to run
+it. Then open up your browser's console. That's right, your browser runs a
+JavaScript sandbox when you open up the console.
+
+To open up your browser's console from Chrome, type `command` + `option` + `J`.
+From Firefox, type `command` + `option` + `K`.
+
+From your console, simply type the code above into the prompt and hit `return`.
+There, you've run your first JavaScript code! (It assigned the string `"hello world"`
+to the variable `greeting`.)
+
+Open up Chrome and on any tab (even a blank one) right click and select
+`Inspect` from the dropdown. From there, select the `console` tab:
+
+![console](https://s3.amazonaws.com/learn-verified/console.png)
+
+The white space below is your console, a sandbox where you can enter and execute
+any JavaScript code you want.
+
+![Executing JavaScript in Console](https://s3.amazonaws.com/learn-verified/exectuing-js-in-console.png)
+
+With your console open, declare the `greeting` variable
+
+```javascript
+var greeting = "hello world";
+```
+
+then enter:
+
+```javascript
+console.log(greeting)
+```
+
+You should see "hello world" followed by `undefined`. `undefined` is the value
+that the `console.log()` function returns.
+
+`console.log()` is, as you probably noted, a function that prints its arguments
+to the `console` (that little sandbox-y window that's now opened in your
+browser). (As you might have guessed, "log" is a computer-y way of saying
+"print".)
+
+If that all seems a little complicated right now, don't worry — it'll make sense
+soon, when we learn about objects, and functions, and arguments...
 
 #### Whitespace
 
-As with Ruby, JavaScript gives whitespace no meaning outside of quotation marks.
+JavaScript gives whitespace no meaning outside of quotation marks.
 
 ```javascript
 var greeting =         "hello world";
 
-greeting == "hello world" // Returns true
+greeting === "hello world" // true
 ```
 
-As in Ruby, tabs enhance readability, but have no special meaning.
+Whitespace enhances readability, but has no special meaning.
 
 ```javascript
 var tvShows = {
-    "ABC": [
-        "The Bachelorette",
-        "Grey's Anatomy"
-    ],
-    "FOX": [
-        "Bones",
-        "Empire"
-    ]
+  "ABC": [
+    "The Bachelorette",
+    "Grey's Anatomy"
+  ],
+  "FOX": [
+    "Bones",
+    "Empire"
+  ]
 };
 ```
 
+Nowadays, most JavaScript developers use "soft tabs" at two spaces — in other
+words, code is indented two spaces at each new level.
+
 #### Semicolons
 
-Semicolons *must* be used in some cases, *should* be used in others, and other times not at all.
+Semicolons *must* be used in some cases, *can* be used in others, and other
+times aren't used at all.
 
 **Necessary**
 
 Semicolons must be used when two statements are on the same line (this is called
-statement chaining). In Ruby, you probably didn't see too much statement chaining
-so here's an example:
-
-```ruby
-fox = "XOF NWORB KCIUQ EHT"
-fox.reverse!; fox.downcase!
-# => "the quick brown fox"
-```
-
-Notice how that semicolon separates the reversal from the down-casing?
-JavaScript, like Ruby, also requires semicolons when executing two statements on
-the same line:
+"statement chaining"). Here's an example:
 
 ```javascript
 var fox = "XOF NWORB KCIUQ EHT";
@@ -84,8 +116,7 @@ fox = fox.split("").reverse().join(""); fox = fox.toLowerCase();
 ```
 Of course, there are exceptions. For instance, when we cover loops, you may
 notice that the `for` loop abides by this rule for the first two statements in
-its argument but not for the last. Not to worry, its syntax will get covered
-more fully later in the curriculum.
+its argument but not for the last.
 
 **Ideal**
 
@@ -129,12 +160,12 @@ declarations**.
 ``` javascript
 // function declaration (no semicolon)
 function foo() {
-    return 'foo';
+  return 'foo';
 }
 
 // function expression (semicolon)
 var bar = function() {
-    return 'bar';
+  return 'bar';
 };
 ```
 
@@ -161,7 +192,7 @@ JavaScript that most browsers work in) using a tool like [Babel](https://babeljs
 All of this is to say that the long-running semicolon debate in JavaScript
 is largely overblown at this point. Remember to use semicolons to separate
 statements that occur on a single line; otherwise, follow the conventions of
-the team.
+your team.
 
 ## Truthy and Falsey Values
 
@@ -197,49 +228,4 @@ null;
 undefined;
 ```
 
-## Printing to the Console
-
-One of the first methods you probably learned in Ruby was `puts`. JavaScript has
-an equivalent function called `console.log()`. Let's take the Ruby code below
-and turn it into JavaScript code:
-
-```ruby
-puts "JavaScript is also known as ECMAScript"
-```
-
-Well let's change that `puts` into a `console.log`:
-
-```javascript
-console.log "JavaScript is also known as ECMAScript"
-```
-Now we'll wrap the string in parentheses:
-
-```javascript
-console.log("JavaScript is also known as ECMAScript")
-```
-
-And the icing on the top of this printing-string cake (yum!) is to add a semicolon at the end:
-
-```javascript
-console.log("JavaScript is also known as ECMAScript");
-```
-
-Will the code execute and work without the semicolon? Yes. Is the semicolon best practice? Yes. Should you use semicolons? Also yes.
-
-Well, this code is all fine and dandy but how do you run it? The best, possibly most powerful thing about JavaScript is that all modern browsers know how to run it. All you need to do is make sure you're reading this on either Chrome or Firefox (trust us, the developer tools of these browsers are way better than on Safari). Then open up your browser's console. That's right, just like your computer knows about running a Ruby sandbox when you type `irb`, your browser runs a JavaScript sandbox when you open up the console.
-
-To open up your browser's console from Chrome, type `command` + `option` + `J`. From Firefox, type `command` + `option` + `K`. (If you love writing directly into your terminal, go ahead and install [Node](http://blog.teamtreehouse.com/install-node-js-npm-mac). Then type `node` in your terminal and you'll be in a JavaScript sandbox.)
-
-From your console (or Node terminal), simply type the code above into the prompt and hit `return`. There, you've run your first JavaScript code!
-
-Open up Chrome and on any tab (even a blank one) right click and select `Inspect` from the dropdown. From there, select the `console` tab:
-
-![console](https://s3.amazonaws.com/learn-verified/console.png)
-
-The white space below is your console, a sandbox where you can enter and execte any JavaScript code you want.
-
-![Executing JavaScript in Console](https://s3.amazonaws.com/learn-verified/exectuing-js-in-console.png)
-
-
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-basics-readme' title='Intro to JavaScript'>Intro to JavaScript</a> on Learn.co and start learning to code for free.</p>
-
