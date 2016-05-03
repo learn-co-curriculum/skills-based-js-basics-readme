@@ -37,7 +37,7 @@ any JavaScript code you want.
 With your console open, enter:
 
 ```javascript
-console.log("hello world")
+console.log("Hello, world!")
 ```
 
 You did it! You just wrote some JavaScript!
