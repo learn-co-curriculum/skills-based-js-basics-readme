@@ -7,7 +7,7 @@ In technobabble, JavaScript is a dynamic, untyped, and interpreted programming l
 ## Objectives
 + Write your first JavaScript code!
 
-## The Console
+## The (Browser) Console
 
 The best, possibly most powerful thing about JavaScript is that all modern browsers know how to run it. In fact, we can write and execute JavaScript in our browsers ourselves!
 
@@ -40,5 +40,27 @@ You did it! You just wrote some JavaScript!
 ![hooray](http://i.giphy.com/3ornk5Sou1XMaL44bS.gif)
 
 (Note: You might see `undefined` in the console after you click "OK" — this is normal, and nothing to worry about.)
+
+## Experiment Time
+
+A large part of programming is experimentation — we come up with a hypothesis (how we think something should work) and test it with code.
+
+In console, enter `alert('Hello, world!')` (with single quotes instead of the double quotes above). What happened? It should have worked the same way as before.
+
+Now try `alert("I'd love to learn JavaScript!")` — pretty straightforward, right?
+
+But now how about `alert('I'd love to learn JavaScript!')`? You should see an error like
+
+![SyntaxError](https://curriculum-content.s3.amazonaws.com/skills-based-js/intro_to_js_syntax_error.png)
+
+We'll cover errors in detail later on, but in this case it's because JavaScript doesn't know the difference between a single quote and an apostrophe. We have to tell it the difference.
+
+When we use double quotes, we're implicitly telling JavaScript that `"I'd"` has an apostrophe in it because we're wrapping the whole phrase ("I'd love to learn JavaScript!") in those double quotes. Sometimes, however, we need to be more explicit: we can do so with a backslash `\`.
+
+Try entering `alert('I\'d love to learn JavaScript!')` — don't forget the backslash! You should now see an alert as normal.
+
+## Your Turn
+
+Practice `alert()`-ing with a few phrases of your own. Experiment! Try things that you aren't sure will work — it's okay if they don't!
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-basics-readme' title='Intro to JavaScript'>Intro to JavaScript</a> on Learn.co and start learning to code for free.</p>
