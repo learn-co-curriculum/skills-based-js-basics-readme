@@ -17,11 +17,11 @@ To open up your browser's console from Chrome, type `cmd` + `option` + `j`. From
 
 Alternatively, open up Chrome and on any tab (even a blank one) right click and select `Inspect` from the dropdown. From there, select the `console` tab:
 
-![console](https://s3.amazonaws.com/learn-verified/console.png)
+![console](https://curriculum-content.s3.amazonaws.com/skills-based-js/console_chrome.png)
 
 The white space below is your console, a sandbox where you can enter and execute any JavaScript code you want. (Wondering what we mean by "sandbox"? Remember how we could play in sandboxes as kids: building castles, moats, and shaping an entire world without worrying about the consequences outside of that world? In programming, sandboxes work the same way: they're environments that we have complete control over, but whose contents don't spill into the outside world.)
 
-![Executing JavaScript in Console](https://s3.amazonaws.com/learn-verified/exectuing-js-in-console.png)
+![Executing JavaScript in Console](https://curriculum-content.s3.amazonaws.com/skills-based-js/console_example.png)
 
 With your console open, type
 
