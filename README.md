@@ -13,7 +13,7 @@ The best, possibly most powerful thing about JavaScript is that all modern brows
 
 (Windows/Linux users, whenever you see `cmd` below or in upcoming lessons, use `ctrl` if you need to.)
 
-To open up your browser's console from Chrome, type `cmd` + `option` + `j` (on Windows this is 'ctrl' + 'shift' + 'I'). From Firefox, type `cmd` + `option` + `k`. From Safari, you'll first need [to enable the Web Inspector](https://developer.apple.com/library/mac/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/GettingStarted/GettingStarted.html); then you can press `cmd` + `option` + `c`.
+To open up your browser's console from Chrome, type `cmd` + `option` + `j` (on Windows this is `ctrl` + `shift` + `i`). From Firefox, type `cmd` + `option` + `k`. From Safari, you'll first need [to enable the Web Inspector](https://developer.apple.com/library/mac/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/GettingStarted/GettingStarted.html); then you can press `cmd` + `option` + `c`.
 
 Alternatively, open up Chrome and on any tab (even a blank one) right click and select `Inspect` from the dropdown. From there, select the `console` tab:
 
