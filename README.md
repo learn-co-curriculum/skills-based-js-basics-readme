@@ -37,7 +37,7 @@ What was that?
 
 You did it! You just wrote some JavaScript!
 
-![hooray](http://i.giphy.com/3ornk5Sou1XMaL44bS.gif)
+![hooray](https://i.giphy.com/3ornk5Sou1XMaL44bS.gif)
 
 (Note: You might see `undefined` in the console after you click "OK" — this is normal, and nothing to worry about.)
 
