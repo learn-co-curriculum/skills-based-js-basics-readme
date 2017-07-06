@@ -1,5 +1,4 @@
 # Intro to JavaScript
-
 JavaScript is the de facto language of the internet. It's a tool that, once mastered, will allow you to interact with users via apps in fun and interesting ways.
 
 In technobabble, JavaScript is a dynamic, untyped, and interpreted programming language; it is prototype-based and supports both object-oriented and functional approaches. What all this means will become more apparent in lessons and through exposure to the language. But here are the basics.
@@ -8,7 +7,6 @@ In technobabble, JavaScript is a dynamic, untyped, and interpreted programming l
 + Write your first JavaScript code!
 
 ## The (Browser) Console
-
 The best, possibly most powerful thing about JavaScript is that all modern browsers know how to run it. In fact, we can write and execute JavaScript in our browsers ourselves!
 
 (Windows/Linux users, whenever you see `cmd` below or in upcoming lessons, use `ctrl` if you need to.)
@@ -42,7 +40,6 @@ You did it! You just wrote some JavaScript!
 (Note: You might see `undefined` in the console after you click "OK" — this is normal, and nothing to worry about.)
 
 ## Experiment Time
-
 A large part of programming is experimentation — we come up with a hypothesis (how we think something should work) and test it with code.
 
 In console, enter `alert('Hello, world!')` (with single quotes instead of the double quotes above). What happened? It should have worked the same way as before.
@@ -60,9 +57,6 @@ When we use double quotes, we're implicitly telling JavaScript that `"I'd"` has 
 Try entering `alert('I\'d love to learn JavaScript!')` — don't forget the backslash! You should now see an alert as normal.
 
 ## Your Turn
-
 Practice `alert()`-ing with a few phrases of your own. Experiment! Try things that you aren't sure will work — it's okay if they don't!
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-basics-readme' title='Intro to JavaScript'>Intro to JavaScript</a> on Learn.co and start learning to code for free.</p>
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/skills-based-js-basics-readme'>JavaScript Basics</a> on Learn.co and start learning to code for free.</p>
